@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	
+	<persistence-unit name="ReservasHotel">
+
+		<class>modelo.Pessoa</class>
+		<class>modelo.PessoaJuridica</class>
+		<class>modelo.Endereco</class>
+		<class>modelo.Reserva</class>
+		<class>modelo.PessoaFisica</class>
+		<class>modelo.Diaria</class>
+		<class>modelo.DiariaReservada</class>
+		<class>modelo.Quarto</class>
+		<class>modelo.DiariaAvulsa</class>
+		
+		
+	</persistence-unit>
+</persistence>

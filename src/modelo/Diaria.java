@@ -1,5 +1,5 @@
 package modelo;
-
+import modelo.*;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<f:view locale="#{geralBean.locale}">
+	<h:head>
+		<title>#{titulo}</title>
+		<style>
+			@IMPORT url("estilo.css");
+		</style>
+	</h:head>
+
+	<h:body>
+		<div id="topo">
+			
+			<h:form>
+				<ui:repeat var="l" value="#{geralBean.localesDisponiveis}">
+					<h:commandButton image="bandeiras/#{l}.gif" actionListener="#{geralBean.atualizarLocale}">
+						<f:attribute name="locale" value="#{l}"/>
+					</h:commandButton>
+					&nbsp;
+				</ui:repeat>
+			</h:form>
+		</div>
+		<div id="conteudo">
+			<div id="esquerda">
+				<ui:include src="/menu.xhtml" />
+			</div>
+			<div id="direita"><ui:insert name="direita">O que vem do lado direito</ui:insert></div>
+			<div id="centro"><ui:insert>O que vem no centro</ui:insert></div>
+		</div>
+		<div id="rodape">
+		<strong>Aluna Rebeca Divina</strong><br/>
+			https://github.com/acebeR<br/>
+			
+		</div>
+	
+		<ui:debug />
+	</h:body>
+</f:view>
+</html>

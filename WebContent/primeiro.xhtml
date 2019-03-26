@@ -1,13 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-	xmlns:h="http://xmlns.jcp.org/jsf/html"
-	xmlns:f="http://xmlns.jcp.org/jsf/core">
-
-
-<h1>Meu primeiro exemplo</h1>
-#{meuPrimeiroBean.ola}
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	<ui:composition template="/estrutura.xhtml">
+		<ui:param name="titulo" value="Minha primeira pagina JSF ... agora com Facelets Templates" />		
+		<h1>Meu primeiro exemplo JSF</h1>
+		
+		
+		
+		<h:form>
+			Aula UDEMY
+			<h:outputLink value="https://www.udemy.com/jsf-java-server-faces-20/learn/v4/t/lecture/178112?start=0">Cursos de Java</h:outputLink>
+			<br/>
+			<br/>
+			Link para a Especializa
+			<h:outputLink value="http://www.especializa.com.br/java">Cursos de Java na Especializa</h:outputLink>
+			<br/>
+			<br/>
+			Meu Git
+			<h:outputLink value="https://github.com/acebeR">Rebeca Divina</h:outputLink>
+			<br/>
+		</h:form>
+	
+	</ui:composition>
 
 </html>
